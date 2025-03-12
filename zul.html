@@ -1,0 +1,447 @@
+<!doctype html>
+<html>
+ <head>
+	<title>Amakhodi namarobhothi | Ikhaya</title>
+	<meta Charset="UTF-8">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<style>
+	html{
+	font-family: sans-serif;
+	}
+	body {
+    background-image: url("1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+	li, h2, p {
+	text-align: center;
+	}
+	h1 {	
+	background-color: rgba(250, 245, 250, 90%);
+	margin: auto;
+	max-width: 800px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+	.dropdown {
+	width: 100%;
+	Height: 50px;
+	background: linear-gradient(90deg, rgba(0, 0, 200, 100%), rgba(255, 255, 255, 100%));
+	margin-top: -17px;
+	margin-left: -7.75px;
+	position: fixed;
+	z-index: 1;
+	}
+	.hi {
+	position: fixed;
+	margin-top: -5px;
+	color: white;
+	margin-left: 17.75px;
+	z-index: 1;
+	}
+	.hi-cover {
+	Position: fixed;
+	width: 58px;
+	height: 50px;
+	Margin-top: -9px;
+	margin-left: 3px;
+	z-index: 5;
+	}
+	.hi-cover:hover {
+	Position: fixed;
+	Background-color: rgba(255, 230, 230, 40%);
+	width: 58px;
+	height: 30px;
+	Margin-top: -9px;
+	margin-left: 3px;
+	z-index: 5;
+	}	
+	.stuff {
+	position: fixed;
+	margin-top: -5px;
+	color: white;
+	margin-left: 97.75px;
+	z-index: 1;
+	}
+	.stuff-dropper {
+	Position: fixed;
+	width: 90px;
+	height: 30px;
+	Margin-top: -9px;
+	margin-left: 67px;
+	color: rgba(255, 255, 255, 0%);
+	font-size: 0px;
+	z-index: 2;
+	}
+	.stuff-dropper:hover {
+	Position: fixed;
+	Background-color: rgba(150, 150, 230, 40%);
+	width: 90px;
+	height: 130px;
+	Margin-top: -9px;
+	margin-left: 67px;
+	color: rgba(0, 0, 0, 100%);
+	text-align: center;
+	font-size: 15px;
+	z-index: 2;
+	}
+	.service-container {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(0, 255, 0, 0%);
+	margin-top: 22px;
+	z-index: 3
+	}
+	.service-container:hover {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(50, 50, 240, 30%);
+	margin-top: 22px;
+	z-index: 4;
+	}
+	.services {
+	margin-top: 28px;
+	z-index: 5;
+	font-size: 10px;
+	}
+	.Contact-container {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(0, 255, 0, 0%);
+	margin-top: 66px;
+	z-index: 3;
+	}
+	.Contact-container:hover {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(50, 50, 240, 30%);
+	margin-top: 66px;
+	z-index: 4;
+	position: absolute;
+	}
+	.exit-container {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(0, 255, 0, 0%);
+	margin-top: 106px;
+	z-index: 3;
+	}
+	.exit-container:hover {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(50, 50, 240, 30%);
+	margin-top: 106px;
+	z-index: 4;
+	position: absolute;
+	}
+	.robot {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	}
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+    }
+	.material-symbols-outlined {
+	position: absolute;
+	z-index: 10;
+	position: fixed;
+	margin-left: 175px;
+	margin-top: -9px;
+	}
+	.p1 {
+	position: fixed;
+	z-index: 10;
+	margin-left: 200px;
+	margin-top: -5px;
+	color: white;
+	font-family: sans-serif;
+	}
+	p1{
+	position: fixed;
+	font-size: 14px;
+	}
+	p {
+	font-size: 14px;
+	}
+	.lang {
+	Position: fixed;
+	width: 90px;
+	height: 30px;
+	Margin-top: -8.75px;
+	margin-left: 175px;
+	color: rgba(255, 255, 255, 0%);
+	font-size: 0px;
+	z-index: 15;
+	}
+	.lang:hover {
+	Position: fixed;
+	Background-color: rgba(150, 150, 230, 40%);
+	width: 90px;
+	height: 130px;
+	Margin-top: -8.75px;
+	margin-left: 175px;
+	color: rgba(0, 0, 0, 100%);
+	text-align: center;
+	font-size: 15px;
+	z-index: 15;
+	}
+	.seperator {
+	Height: 4px;
+	}
+	li {
+	font-size: 15px;
+	}
+	.List {
+	border: 2px solid black;
+	margin: auto;
+	width: 40%;
+	padding: 20px;
+	border-radius: 60px;
+	background-color: rgba(250, 245, 250, 90%);
+	}
+	#robot {
+    margin: auto;
+    border: 2px solid gray;
+    width: 200px;
+    height: 200px;
+    background-image: url("rover.png");
+    animation: dude 4000s;
+    animation-timing-function: linear;
+    }
+    @keyframes dude {
+    100% {transform: rotate(500000deg);}
+	}
+	.robottt {
+	background-image: url("robot.png");
+	}
+	.divider {
+	height: 45px;
+	}
+	.black {
+	width: 101%;
+	height: 475px;
+	background-color: black;
+	margin-left: -8px;
+	border-radius: 40px;
+	color: white;
+	}
+	a {
+	color: red;
+	}
+	a:hover {
+	color: orange;
+	}
+	a:visited {
+	color: green
+	}
+	.join {
+	font-size: 40px;
+	padding: 10px;
+	}
+	a, li {
+	font-size: 30px;
+	}
+	.12345 {
+	height: 5px;
+	}
+	.ppp {
+	font-size: 30px;
+	max-width: 800px;
+	margin-left: 27%;
+	}
+	hr {
+	width: 100.4%;
+	height: 30px;
+	margin-left: -10px;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 100%), rgba(0, 0, 230, 100%), rgba(255, 255, 255, 100%));
+	border-color: black;
+	}
+	#brooo  {
+    margin: auto;
+    border: 2px solid black;
+    animation: bruhhh 10s;
+	animation-iteration-count: 1;
+	max-width: 690px;
+	border-radius: 30px;
+	border-top-left-radius: 0px;
+	padding: 10px;
+	background-color: rgba(250, 245, 250, 90%);
+    }
+	@keyframes bruhhh {
+    0% { opacity: 0; }
+    20% { opacity: 0; }
+    40% { opacity: 0.3; }
+    60% { opacity: 0.5; }
+    80% { opacity: 0.9; }
+    100% { opacity: 1; }
+    }
+	.heding {
+	font-style: bold;
+	font-size: 26px;
+	}
+	.descr {
+	font-size: 20px;
+	}
+	.dud {
+	font-size: 8px;
+	}
+	.lBoi {
+	font-size: 20px;
+	}
+	.choice {
+	margin-top: 25px;
+	z-index: 5;
+	}
+	.c-sep {
+	height: 5px;
+	}
+	.eng-container {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(0, 255, 0, 0%);
+	margin-top: 25px;
+	z-index: 3
+	}
+	.eng-container:hover {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(50, 50, 240, 30%);
+	margin-top: 25px;
+	z-index: 4;
+	}
+	.afr-container {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(0, 255, 0, 0%);
+	margin-top: 65px;
+	z-index: 3
+	}
+	.afr-container:hover {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(50, 50, 240, 30%);
+	margin-top: 65px;
+	z-index: 4;
+	}
+	.zu-container {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(0, 255, 0, 0%);
+	margin-top: 105px;
+	z-index: 3
+	}
+	.zu-container:hover {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(50, 50, 240, 30%);
+	margin-top: 105px;
+	z-index: 4;
+	}
+	</style>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=language" />
+ </head>
+ <header>
+	<div class="dropdown">
+	</div>
+	<p class="hi">Usizo</p>
+	<a href="Ikhasi losizo.html">
+	<div class="hi-cover" >
+	</div>
+	</a>
+	
+	<p class="stuff">Okuningi</p>
+	<div class="stuff-dropper" >
+	<a href="amasevisi.html">
+	<div class="service-container">
+	</div>
+	</a>
+	<a href="Xhumana.html">
+	<div class="Contact-container">
+	</div>
+	</a>
+	<a href="https://www.google.com">
+	<div class="exit-container">
+	</div>
+	</a>
+	<p class="services">Buka izinsiza</p>
+	<p class="services">Xhumana nathi</p>
+	<p class="services">Phuma</p>
+	</div>
+	<div class="lang">
+	<div class="c-sep"></div>
+	<a href="https://antboi123.github.io/Coding-and-Robotics/">
+	<div class="eng-container">
+	</div>
+	</a>
+	<a href="afr.html">
+	<div class="afr-container">
+	</div>
+	</a>
+	<a href="zul.html">
+	<div class="zu-container">
+	</div>
+	</a>
+	<p class="choice">IsiNgisi</p>
+	<p class="choice">IsiBhunu</p>
+	<p class="choice">IsiZulu</p>
+	</div>
+	<span class="material-symbols-outlined">language</span><p1 class="p1">Ulimi</p1>
+ </header>
+ <body>
+	<p>""""""</p>
+	<div class="seperator"></div>
+	<h1>I-Curro Barlow Park - Ukubhala amakhodi namarobhothi!</h1>
+	<div class="seperator"></div>
+	<div class="List">
+	 <h2>Uma ulapha:</h2>
+	 <li>Cishe uyazibuza ukuthi kuyini ukufaka amakhodi namarobhothi.</li>
+	 <li>Ungase ufune ukujoyina iklabhu yokubhala ikhodi nerobhothi.</li>
+	 <li>Ungase ube nolwazi futhi ufune ukusiza <u>i-US</u> ukuphatha iklabhu yethu.</li>
+	</div>
+	<div class="divider"></div>
+	<div id="robot" class="robottt"></div>
+	<div class="divider"></div>
+	<div class="broo" id="brooo">
+	<p class="heding">Kuyini ukubhala ngekhodi namarobhothi?</p>
+	<li class="descr">Ukubhala amakhodi kuwuhlu lonke lwemiyalo namalebula, amarobhothi noma izinto zikagesi nanoma yiziphi ezinye izingxenye zobuchwepheshe bedijithali okufanele zilandelwe.</li>
+	<li class="descr">Amarobhothi ayizingxenye ezihlelekayo futhi ayimishini esebenza namasekhethi nezici zikagesi, ukuze enze ukuphila kwethu kube lula.</li>
+	<li class="descr">Kuphinde kube yisifundo esisifundiswayo ukuze siqonde ukuthi ubuchwepheshe busebenza kanjani, nokuthi busebenza kanjani.          <u class="dud">*qaphela, akukhona <i>ukubulala</i> amabanga abafundi.</u></li>
+	<p class="lBoi">Cabanga ngamarobhothi okuhlala enyangeni akhelwe ukuhlola indawo. Yaklanywa futhi yahlelwa ukuze ikwazi ukubona ukuphila, noma ezinye izimpawu zempilo yangaphandle komhlaba, futhi yahlola ngempumelelo ezinye izimo zezulu eziyingozi neziyingozi.</p>
+	</div>
+	<div class="divider"></div>
+	<div class="divider"></div>
+	<div class="divider"></div>
+	<div class="black">
+	<p class="join">Ukuze ujoyine iklabhu yethu (ama-microcourses), sicela ukhulume nezinhloko zeqembu noma othisha ababalwe ngezansi <i class="dud">(uma ungumfundi eCurro Barlow Park)</i>:</p>
+	<li><a href="https://digital.curro.co.za/user/view.php?id=6196&course=718" target="_blank">UMnu.Buthelezi</a></li>
+	<li><a href="https://digital.curro.co.za/user/view.php?id=20657&course=718" target="_blank">Sameer Johns 8E2R</a></li>
+	<li>Mr.Hlope - via teams futhi outlook: bongani.h1@curro.co.za</li>
+	<div class="12345"></div>
+	<hr/>
+	<p class="ppp">Kungenjalo, ungavele uvele futhi singakubhalisela iklabhu!</p>
+	<div></div>
+	<p class="ppp">Isikhathi sekilabhu siqala ngo-15:30 - 16:30 ngoLwesibili.</p>
+	</div>
+	
+	
+ </body>
+</html>

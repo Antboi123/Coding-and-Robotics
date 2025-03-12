@@ -1,0 +1,447 @@
+<!doctype html>
+<html>
+ <head>
+    <!--Afrikaaaaaans-->
+	<title>Kodering en robotika | Tuis</title>
+	<meta Charset="UTF-8">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<style>
+	html{
+	font-family: sans-serif;
+	}
+	body {
+    background-image: url("1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+	li, h2, p {
+	text-align: center;
+	}
+	h1 {	
+	background-color: rgba(250, 245, 250, 90%);
+	margin: auto;
+	max-width: 800px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+	.dropdown {
+	width: 100%;
+	Height: 50px;
+	background: linear-gradient(90deg, rgba(0, 0, 200, 100%), rgba(255, 255, 255, 100%));
+	margin-top: -17px;
+	margin-left: -7.75px;
+	position: fixed;
+	z-index: 1;
+	}
+	.hi {
+	position: fixed;
+	margin-top: -5px;
+	color: white;
+	margin-left: 17.75px;
+	z-index: 1;
+	}
+	.hi-cover {
+	Position: fixed;
+	width: 58px;
+	height: 50px;
+	Margin-top: -9px;
+	margin-left: 3px;
+	z-index: 5;
+	}
+	.hi-cover:hover {
+	Position: fixed;
+	Background-color: rgba(255, 230, 230, 40%);
+	width: 58px;
+	height: 30px;
+	Margin-top: -9px;
+	margin-left: 3px;
+	z-index: 5;
+	}	
+	.stuff {
+	position: fixed;
+	margin-top: -5px;
+	color: white;
+	margin-left: 97.75px;
+	z-index: 1;
+	}
+	.stuff-dropper {
+	Position: fixed;
+	width: 90px;
+	height: 30px;
+	Margin-top: -9px;
+	margin-left: 67px;
+	color: rgba(255, 255, 255, 0%);
+	font-size: 0px;
+	z-index: 2;
+	}
+	.stuff-dropper:hover {
+	Position: fixed;
+	Background-color: rgba(150, 150, 230, 40%);
+	width: 90px;
+	height: 130px;
+	Margin-top: -9px;
+	margin-left: 67px;
+	color: rgba(0, 0, 0, 100%);
+	text-align: center;
+	font-size: 15px;
+	z-index: 2;
+	}
+	.service-container {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(0, 255, 0, 0%);
+	margin-top: 22px;
+	z-index: 3
+	}
+	.service-container:hover {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(50, 50, 240, 30%);
+	margin-top: 22px;
+	z-index: 4;
+	}
+	.services {
+	margin-top: 25px;
+	z-index: 5;
+	}
+	.Contact-container {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(0, 255, 0, 0%);
+	margin-top: 66px;
+	z-index: 3;
+	}
+	.Contact-container:hover {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(50, 50, 240, 30%);
+	margin-top: 66px;
+	z-index: 4;
+	position: absolute;
+	}
+	.exit-container {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(0, 255, 0, 0%);
+	margin-top: 106px;
+	z-index: 3;
+	}
+	.exit-container:hover {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(50, 50, 240, 30%);
+	margin-top: 106px;
+	z-index: 4;
+	position: absolute;
+	}
+	.robot {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	}
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+    }
+	.material-symbols-outlined {
+	position: absolute;
+	z-index: 10;
+	position: fixed;
+	margin-left: 175px;
+	margin-top: -9px;
+	}
+	.p1 {
+	position: fixed;
+	z-index: 10;
+	margin-left: 200px;
+	margin-top: -5px;
+	color: white;
+	font-family: sans-serif;
+	}
+	p1{
+	position: fixed;
+	font-size: 14px;
+	}
+	p {
+	font-size: 14px;
+	}
+	.lang {
+	Position: fixed;
+	width: 90px;
+	height: 30px;
+	Margin-top: -8.75px;
+	margin-left: 175px;
+	color: rgba(255, 255, 255, 0%);
+	font-size: 0px;
+	z-index: 15;
+	}
+	.lang:hover {
+	Position: fixed;
+	Background-color: rgba(150, 150, 230, 40%);
+	width: 90px;
+	height: 130px;
+	Margin-top: -8.75px;
+	margin-left: 175px;
+	color: rgba(0, 0, 0, 100%);
+	text-align: center;
+	font-size: 15px;
+	z-index: 15;
+	}
+	.seperator {
+	Height: 4px;
+	}
+	li {
+	font-size: 15px;
+	}
+	.List {
+	border: 2px solid black;
+	margin: auto;
+	width: 40%;
+	padding: 20px;
+	border-radius: 60px;
+	background-color: rgba(250, 245, 250, 90%);
+	}
+	#robot {
+    margin: auto;
+    border: 2px solid gray;
+    width: 200px;
+    height: 200px;
+    background-image: url("rover.png");
+    animation: dude 4000s;
+    animation-timing-function: linear;
+    }
+    @keyframes dude {
+    100% {transform: rotate(500000deg);}
+	}
+	.robottt {
+	background-image: url("robot.png");
+	}
+	.divider {
+	height: 45px;
+	}
+	.black {
+	width: 101%;
+	height: 475px;
+	background-color: black;
+	margin-left: -8px;
+	border-radius: 40px;
+	color: white;
+	}
+	a {
+	color: red;
+	}
+	a:hover {
+	color: orange;
+	}
+	a:visited {
+	color: green
+	}
+	.join {
+	font-size: 40px;
+	padding: 10px;
+	}
+	a, li {
+	font-size: 30px;
+	}
+	.12345 {
+	height: 5px;
+	}
+	.ppp {
+	font-size: 30px;
+	max-width: 700px;
+	margin-left: 27%;
+	}
+	hr {
+	width: 100.4%;
+	height: 30px;
+	margin-left: -10px;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 100%), rgba(0, 0, 230, 100%), rgba(255, 255, 255, 100%));
+	border-color: black;
+	}
+	#brooo  {
+    margin: auto;
+    border: 2px solid black;
+    animation: bruhhh 10s;
+	animation-iteration-count: 1;
+	max-width: 690px;
+	border-radius: 30px;
+	border-top-left-radius: 0px;
+	padding: 10px;
+	background-color: rgba(250, 245, 250, 90%);
+    }
+	@keyframes bruhhh {
+    0% { opacity: 0; }
+    20% { opacity: 0; }
+    40% { opacity: 0.3; }
+    60% { opacity: 0.5; }
+    80% { opacity: 0.9; }
+    100% { opacity: 1; }
+    }
+	.heding {
+	font-style: bold;
+	font-size: 26px;
+	}
+	.descr {
+	font-size: 20px;
+	}
+	.dud {
+	font-size: 8px;
+	}
+	.lBoi {
+	font-size: 20px;
+	}
+	.choice {
+	margin-top: 25px;
+	z-index: 5;
+	}
+	.c-sep {
+	height: 5px;
+	}
+	.eng-container {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(0, 255, 0, 0%);
+	margin-top: 25px;
+	z-index: 3
+	}
+	.eng-container:hover {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(50, 50, 240, 30%);
+	margin-top: 25px;
+	z-index: 4;
+	}
+	.afr-container {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(0, 255, 0, 0%);
+	margin-top: 65px;
+	z-index: 3
+	}
+	.afr-container:hover {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(50, 50, 240, 30%);
+	margin-top: 65px;
+	z-index: 4;
+	}
+	.zu-container {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(0, 255, 0, 0%);
+	margin-top: 105px;
+	z-index: 3
+	}
+	.zu-container:hover {
+	position: fixed;
+	Width: 90px;
+	height: 18px;
+	background-color: rgba(50, 50, 240, 30%);
+	margin-top: 105px;
+	z-index: 4;
+	}
+	</style>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=language" />
+ </head>
+ <header>
+	<div class="dropdown">
+	</div>
+	<p class="hi">Help</p>
+	<a href="hulp bladsy.html">
+	<div class="hi-cover" >
+	</div>
+	</a>
+	
+	<p class="stuff">Meer</p>
+	<div class="stuff-dropper" >
+	<a href="dienste.html">
+	<div class="service-container">
+	</div>
+	</a>
+	<a href="kont.html">
+	<div class="Contact-container">
+	</div>
+	</a>
+	<a href="https://www.google.com">
+	<div class="exit-container">
+	</div>
+	</a>
+	<p class="services">Bekyk dienste</p>
+	<p class="services">Kontak ons</p>
+	<p class="services">Uitgang</p>
+	</div>
+	<div class="lang">
+	<div class="c-sep"></div>
+	<a href="https://antboi123.github.io/Coding-and-Robotics/">
+	<div class="eng-container">
+	</div>
+	</a>
+	<a href="afr.html">
+	<div class="afr-container">
+	</div>
+	</a>
+	<a href="zul.html">
+	<div class="zu-container">
+	</div>
+	</a>
+	<p class="choice">Engels</p>
+	<p class="choice">Afrikaans</p>
+	<p class="choice">Zoeloe</p>
+	</div>
+	<span class="material-symbols-outlined">language</span><p1 class="p1">Tale</p1>
+ </header>
+ <body>
+	<p>""""""</p>
+	<div class="seperator"></div>
+	<h1>Curro Barlow Park - Kodering en robotika!</h1>
+	<div class="seperator"></div>
+	<div class="List">
+	 <h2>As jy hier is:</h2>
+	 <li>Jy wonder waarskynlik wat kodering en robotika is.</li>
+	 <li>Jy wil dalk by die kodering- en robotikaklub aansluit.</li>
+	 <li>Jy het dalk ondervinding en wil <u>VS</u> help om ons klub te bestuur.</li>
+	</div>
+	<div class="divider"></div>
+	<div id="robot" class="robottt"></div>
+	<div class="divider"></div>
+	<div class="broo" id="brooo">
+	<p class="heding">Wat is kodering en robotika?</p>
+	<li class="descr">Kodering is die hele lys van opdrag en etikette wat robotte of toestelle of enige ander dele van digitale tegnologie moet volg.</li>
+	<li class="descr">Robotika is die komponente wat programmeerbaar is en is masjiene wat met stroombane en elektriese kenmerke werk om ons lewens oor die algemeen te vergemaklik.</li>
+	<li class="descr">Dit is ook 'n vak wat vir ons geleer word om 'n begrip te kry van hoe tegnologie werk, en hoe om dit te laat werk.          <u class="dud">*let wel, dit is nie om studente se punte <i>dood</i> te maak nie.</u></li>
+	<p class="lBoi">Dink aan die maanlanding en maanrobotte wat vir ruimteverkenning gebou is. Dit is ontwerp en dit is geprogrammeer om lewe, of enige ander tekens van buiteaardse lewe op te spoor, en het ander uiterste en dodelike klimate suksesvol verken.</p>
+	</div>
+	<div class="divider"></div>
+	<div class="divider"></div>
+	<div class="divider"></div>
+	<div class="black">
+	<p class="join">Om by ons klub (mikrokursusse) aan te sluit, praat asseblief met die klubhoofde of onderwysers wat hieronder gelys word <i class="dud">(as jy 'n student by Curro Barlow Park is)</i>:</p>
+	<li><a href="https://digital.curro.co.za/user/view.php?id=6196&course=718" target="_blank">Mnr.Buthelezi</a></li>
+	<li><a href="https://digital.curro.co.za/user/view.php?id=20657&course=718" target="_blank">Sameer Johns 8E2R</a></li>
+	<li>Mr.Hlope - via teams en outlook: bongani.h1@curro.co.za</li>
+	<div class="12345"></div>
+	<hr/>
+	<p class="ppp">Alternatiewelik kan jy net opdaag en ons kan jou vir die klub registreer!</p>
+	<div></div>
+	<p class="ppp">Ons klubtyd is van 15:30 - 16:30 op Dinsdae.</p>
+	</div>
+	
+	
+ </body>
+</html>
